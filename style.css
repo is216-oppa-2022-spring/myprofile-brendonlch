@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(253, 253, 249);
+    z-index: 1;
+    display: flex
+}
+.profile-picture {
+    margin: 5vh 0 5vh 3vw;
+    width: 30%;
+    flex: 50%
+}
+.biography {
+    width: 50%;
+    margin: 5vh 2vw 5vh 1vw;
+    background-color: whitesmoke;
+    padding: 10px;
+    flex: 50%;
+    float: right;
+    height:
+}
+.content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 0;
+    z-index: -1;
+    opacity: 30%;
+    pointer-events:none;
+}
+.profile-card {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+.profile-card:hover {
+    opacity: 0%;
+}
+.profile-card:hover + .content {
+    opacity: 100%;
+}
+
